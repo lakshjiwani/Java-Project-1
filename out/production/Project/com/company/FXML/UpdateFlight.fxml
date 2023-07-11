@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.FXML.Controller">
+    <children>
+        <ImageView fx:id="imageId" fitHeight="462.0" fitWidth="646.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/updateflight.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="176.0" layoutY="50.0" prefHeight="346.0" prefWidth="290.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+         <children>
+            <Label fx:id="UP_Label" layoutX="15.0" layoutY="6.0" prefHeight="17.0" prefWidth="263.0" textFill="#ff0505" />
+         </children></Pane>
+        <Button layoutX="280.0" layoutY="345.0" mnemonicParsing="false" onAction="#UpdateFlight" prefHeight="33.0" prefWidth="79.0" style="-fx-cursor: hand;" stylesheets="@../CSS/Update.css" text="Update" />
+        <Text layoutX="244.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Flight" wrappingWidth="171.13671875">
+            <font>
+                <Font name="Arial Bold" size="22.0" />
+            </font>
+        </Text>
+        <Text layoutX="194.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight ID: " wrappingWidth="61.37890625">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="UP_FL_ID" layoutX="307.0" layoutY="79.0" />
+        <Text layoutX="193.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure Date: " wrappingWidth="111.37890625">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="UP_FL_Dep_Date" layoutX="306.0" layoutY="116.0" />
+        <Text layoutX="193.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure Time: " wrappingWidth="111.37890625">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="UP_FL_Dep_Time" layoutX="306.0" layoutY="153.0" />
+        <Text layoutX="193.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure: " wrappingWidth="111.37890625">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="191.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival:" wrappingWidth="111.37890625">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="191.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival Time: " wrappingWidth="111.37890625">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="191.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: " wrappingWidth="111.37890625">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="UP_FL_Dep" layoutX="306.0" layoutY="188.0" />
+        <TextField fx:id="UP_FL_Arr" layoutX="306.0" layoutY="225.0" />
+        <TextField fx:id="UP_FL_Arr_Time" layoutX="306.0" layoutY="262.0" />
+        <TextField fx:id="UP_FL_price" layoutX="306.0" layoutY="297.0" />
+    </children>
+</AnchorPane>

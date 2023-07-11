@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.FXML.TableControler">
+   <top>
+      <AnchorPane prefHeight="219.0" prefWidth="948.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="76.0" layoutY="39.0" text="Booking">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="BK_flight_id" layoutX="181.0" layoutY="97.0" promptText="Flight ID" />
+            <TextField fx:id="BK_quantity" layoutX="181.0" layoutY="140.0" promptText="Number Of Tickets" />
+            <Label layoutX="112.0" layoutY="100.0" prefHeight="18.0" prefWidth="56.0" text="Flight ID" />
+            <Label layoutX="112.0" layoutY="143.0" prefHeight="18.0" prefWidth="47.0" text="Quantity" />
+            <Button layoutX="371.0" layoutY="118.0" mnemonicParsing="false" onAction="#BookNow" style="-fx-cursor: hand;" text="Book Now" />
+            <Label fx:id="book_label" layoutX="181.0" layoutY="72.0" prefHeight="18.0" prefWidth="152.0" textFill="#ec0000" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #dfdfdf; -fx-background-radius: 20px;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="flight_table" layoutX="332.0" prefHeight="451.0" prefWidth="948.0" stylesheets="@../CSS/fullpackstyling.css" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="FT_ID_col" prefWidth="42.39999544620514" style="fx-alignment: center;" text="ID" />
+                <TableColumn fx:id="FT_depDate_col" prefWidth="115.0" text="Departure Date" />
+                  <TableColumn fx:id="FT_DepTime_col" prefWidth="115.0" text="Departure Time" />
+                  <TableColumn fx:id="FT_DepAir_col" prefWidth="115.0" text="Departure Airport" />
+                  <TableColumn fx:id="FT_ArivAir_col" prefWidth="115.0" text="Arrival Airport" />
+                  <TableColumn fx:id="FT_ArivTime_col" prefWidth="115.0" text="Arrival Time" />
+                  <TableColumn fx:id="FT_Price" prefWidth="106.0" text="Price" />
+                  <TableColumn fx:id="FT_PlaneName" prefWidth="106.0" text="Plane Name" />
+                  <TableColumn fx:id="FT_AvalSeats" prefWidth="103.9998779296875" text="Available Seats" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
